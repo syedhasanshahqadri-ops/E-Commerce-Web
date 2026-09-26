@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>OrangeHub — Modern E-Commerce</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">Free shipping over $75 <span>•</span> 30-day returns <span>•</span> Secure checkout</div>
+<header id="header">
+<a class="brand" href="#home"><i>O</i>orange<span>hub</span></a>
+<div class="search"><input id="search" placeholder="Search products, brands & categories..."><button id="searchBtn">⌕</button></div>
+<div class="head-actions"><button id="loginBtn">♙ <small>Account</small></button><a href="#contact">♡ <small>Help</small></a><button id="cartBtn">🛒 <b>Cart</b><em id="cartCount">0</em></button></div>
+<button class="mobile" id="mobileBtn">☰</button>
+</header>
+<nav class="nav" id="nav"><a href="#products" data-cat="All">All</a><a href="#products" data-cat="Electronics">Electronics</a><a href="#products" data-cat="Fashion">Fashion</a><a href="#products" data-cat="Home">Home</a><a href="#products" data-cat="Beauty">Beauty</a><a href="#products" data-cat="Sports">Sports</a><a href="#products" data-cat="Accessories">Accessories</a><a href="#services">Services</a></nav>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-text reveal"><label>NEW SEASON · UP TO 40% OFF</label><h1>Good things.<br><em>Great prices.</em></h1><p>Discover everyday essentials, smart tech, fashion and home favorites — all in one beautifully simple store.</p><div class="hero-buttons"><a class="btn orange" href="#products">Shop now →</a><a class="btn white" href="#services">Why OrangeHub</a></div><div class="stats"><div><b>50+</b><small>Products</small></div><div><b>4.9/5</b><small>Customer rating</small></div><div><b>24/7</b><small>Support</small></div></div></div>
+<div class="hero-art reveal"><div class="orb"></div><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=85" alt="Shopping"><div class="float f1">🔥 <b>Hot deals<small>New drops daily</small></b></div><div class="float f2">✓ <b>Fast delivery<small>Track every order</small></b></div></div>
+</section>
+
+<section class="features"><div>🚚 <b>Fast delivery</b><small>Across the country</small></div><div>↩ <b>30-day returns</b><small>No-stress returns</small></div><div>🔒 <b>Secure payment</b><small>Protected checkout</small></div><div>◉ <b>Expert support</b><small>We're here to help</small></div></section>
+
+<section class="section" id="categories"><div class="section-head reveal"><div><label>SHOP BY CATEGORY</label><h2>Find your <em>favorite.</em></h2></div><a href="#products">View all →</a></div><div class="categories">
+<button data-cat="Electronics" class="cat c1">⚡<b>Electronics</b><small>12 products</small></button>
+<button data-cat="Fashion" class="cat c2">✦<b>Fashion</b><small>10 products</small></button>
+<button data-cat="Home" class="cat c3">⌂<b>Home</b><small>8 products</small></button>
+<button data-cat="Beauty" class="cat c4">✿<b>Beauty</b><small>7 products</small></button>
+<button data-cat="Sports" class="cat c5">◈<b>Sports</b><small>6 products</small></button>
+<button data-cat="Accessories" class="cat c6">◇<b>Accessories</b><small>7 products</small></button>
+</div></section>
+
+<section class="section products" id="products"><div class="section-head reveal"><div><label>OUR COLLECTION</label><h2>Trending <em>now.</em></h2></div><p>Curated picks with great design, useful features and prices that make sense.</p></div>
+<div class="toolbar"><div id="filters"></div><select id="sort"><option value="featured">Featured</option><option value="low">Price: Low to high</option><option value="high">Price: High to low</option><option value="rating">Top rated</option><option value="name">Name A–Z</option></select></div>
+<div class="grid" id="grid"></div><div class="empty" id="empty">⌕<h3>No products found</h3><p>Try another search or category.</p></div></section>
+
+<section class="promo"><div><img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=1500&q=85" alt="Shopping"></div><article><label>ORANGEHUB PLUS</label><h2>More perks.<br><em>Less waiting.</em></h2><p>Priority dispatch, exclusive launches, member-only offers and dedicated support.</p><button class="btn white" id="plus">Explore Plus →</button></article></section>
+
+<section class="section services" id="services"><div class="center section-head reveal"><div><label>WHY SHOP WITH US</label><h2>Service that feels <em>human.</em></h2></div><p>We build the experience around what happens after you click buy.</p></div><div class="service-grid"><article><span>01</span><i>🚚</i><h3>Express delivery</h3><p>Reliable delivery windows and real-time tracking keep you in control.</p><a href="#contact">Learn more →</a></article><article><span>02</span><i>🛡️</i><h3>Buyer protection</h3><p>Secure checkout, transparent policies and straightforward returns.</p><a href="#contact">Learn more →</a></article><article><span>03</span><i>💬</i><h3>Human support</h3><p>Questions about a product or order? We're ready to help.</p><a href="#contact">Contact us →</a></article></div></section>
+
+<section class="section testimonials"><div class="section-head"><div><label>CUSTOMER LOVE</label><h2>Loved by <em>shoppers.</em></h2></div><div><button id="prev">←</button><button id="next">→</button></div></div><div class="reviews" id="reviews"><article class="active">★★★★★<p>“The checkout was incredibly smooth. My headphones arrived earlier than expected.”</p><b>Amelia M.</b><small>Verified customer</small></article><article>★★★★★<p>“I found exactly what I needed without digging through confusing pages.”</p><b>James K.</b><small>Verified customer</small></article><article>★★★★★<p>“Support answered my question quickly. I'll definitely order again.”</p><b>Sofia R.</b><small>Verified customer</small></article></div></section>
+
+<section class="section contact" id="contact"><div class="reveal"><label>GET IN TOUCH</label><h2>Need a hand?<br><em>We're here.</em></h2><p>Order, product question or return — send us a message and we'll help.</p><div class="details"><span>✉ <b>hello@orangehub.example</b></span><span>☎ <b>+1 (800) 555-0148</b></span><span>◷ <b>Mon–Sun · 24/7</b></span></div></div><form id="contactForm" class="form reveal"><label>Name<input required placeholder="Alex Morgan"></label><label>Email<input type="email" required placeholder="alex@example.com"></label><label>Topic<select><option>Order support</option><option>Product question</option><option>Returns & refunds</option></select></label><label>Message<textarea required placeholder="How can we help?"></textarea></label><button class="btn orange">Send message →</button></form></section>
+</main>
+
+<footer><div><a class="brand" href="#home"><i>O</i>orange<span>hub</span></a><p>Simple shopping. Better everyday.</p></div><div><h4>Shop</h4><a href="#products">All products</a><a href="#products">Electronics</a><a href="#products">Fashion</a><a href="#products">Home</a></div><div><h4>Support</h4><a href="#contact">Contact</a><a href="#services">Services</a><a href="#">Returns</a></div><div><h4>Newsletter</h4><p>Get launches and offers.</p><form id="newsletter"><input type="email" required placeholder="Email address"><button>→</button></form></div></footer>
+
+<aside class="drawer" id="drawer"><div class="drawer-head"><div><label>YOUR BAG</label><h3>Shopping cart</h3></div><button id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-empty" id="cartEmpty">🛒<h3>Your cart is empty</h3><p>Add something you love.</p></div><div class="cart-foot"><div><span>Subtotal</span><b>$<span id="total">0</span></b></div><button class="btn orange" id="checkout">Proceed to checkout →</button></div></aside><div class="backdrop" id="backdrop"></div>
+
+<div class="modal" id="loginModal"><div class="modal-bg" data-close></div><div class="modal-card"><button class="close" data-close>×</button><i class="login-logo">O</i><label>WELCOME BACK</label><h2>Sign in to <em>OrangeHub.</em></h2><p>Manage orders, save favorites and checkout faster.</p><form id="loginForm"><label>Email<input type="email" required placeholder="you@example.com"></label><label>Password<input type="password" required placeholder="••••••••"></label><button class="btn orange">Sign in →</button></form><small>Demo UI — no real authentication connected.</small></div></div>
+
+<div class="modal" id="productModal"><div class="modal-bg" data-close-product></div><div class="modal-card quick"><button class="close" data-close-product>×</button><img id="qImg"><div><label id="qCat"></label><h2 id="qName"></h2><div class="stars" id="qRating"></div><p id="qDesc"></p><strong class="qPrice">$<span id="qPrice"></span></strong><div class="quick-actions"><button class="btn orange" id="qAdd">Add to cart +</button><button class="btn dark" id="qBuy">Buy now →</button></div></div></div></div>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body></html>
